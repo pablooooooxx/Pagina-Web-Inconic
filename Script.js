@@ -20,7 +20,6 @@ preguntas.forEach((pregunta) => {
 
         });
 
-        // Abrir o cerrar la pregunta seleccionada
         elemento.classList.toggle("activo");
 
         if (elemento.classList.contains("activo")) {
