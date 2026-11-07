@@ -1,0 +1,342 @@
+body {
+    background-color: #ffffff;
+    color: #1C3E40;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #1C3E40;
+    padding: 2% 5%;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 10px 20px;
+    margin: 0;
+    list-style: none;
+}
+
+header nav ul img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: auto; /* Empuja el logo a la izquierda y el menú a la derecha */
+}
+
+header nav ul li {
+    margin: 0;
+    white-space: nowrap;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #a2c4c9;
+}
+
+#sobrenosotros {
+    background-color: #1C3E40;
+    padding: 40px 8% 60px;
+    color: white;
+    text-align: center;
+}
+
+#sobrenosotros h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#sobrenosotros > p {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+#informacion\ general {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#izquierda, #derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+#historia, #valores, #mision, #vision {
+    background-color: #ffffff;
+    color: #1C3E40;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+#historia h2, #valores h2, #mision h2, #vision h2 {
+    margin-top: 0;
+    color: #1C3E40;
+    font-size: 1.3rem;
+    padding-bottom: 8px;
+}
+
+#servicios {
+    background: linear-gradient(180deg, #1C3E40 0%, #FFFFFF 100%);
+    margin: 0;
+    padding: 40px 8%;
+    color: #1C3E40;
+}
+
+#titulo {
+    background: transparent;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+#titulo h2 {
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+#servicios > h5 {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#servicios > p {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 40px;
+}
+
+#servicios > div:nth-of-type(1) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#servicios > div:nth-of-type(1) > div:nth-child(1) {
+    flex: 2;
+    min-width: 300px;
+}
+
+#servicios > div:nth-of-type(1) > div:nth-child(2) {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    min-width: 250px;
+}
+
+#servicios img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+#servicios h1 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+#servicios nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#servicios nav ul li {
+    background: #fdfdfd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+#servicios nav ul li b {
+    font-size: 1.1rem;
+    color: #1C3E40;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#preguntas-frecuentes {
+    padding: 60px 8%;
+    background-color: #ffffff;
+}
+
+#preguntas-frecuentes h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+    color: #1C3E40;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    color: #1C3E40;
+    border: none;
+    text-align: left;
+    font-size: 1.05rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.faq-question::after {
+    content: "⌄";
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.activo .faq-question::after {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #fafafa;
+    border-top: 1px solid #eee;
+}
+
+.faq-answer p {
+    padding: 15px 20px;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+footer {
+    background-color: #1C3E40;
+    color: white;
+    padding: 50px 8% 30px;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+footer > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 0;
+    text-align: left;
+}
+
+footer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #a2c4c9;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.05rem;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #a2c4c9;
+    text-decoration: underline;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+footer > h1:last-of-type {
+    font-size: 1rem;
+    margin-top: 40px;
+    font-weight: normal;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    header nav ul img {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    #informacion\ general {
+        flex-direction: column;
+    }
+
+    #izquierda, #derecha {
+        max-width: 100%;
+    }
+
+    footer > div:nth-of-type(1) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
